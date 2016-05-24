@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta name='viewport' content='initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui' charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="framework7.material.min.css">
+
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="framework7.material.colors.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+  	<title>WanderWear</title>
+  </head>
+
+  <body>
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Slider container -->
+        <div class="swiper-container">
+            <!-- Slides wrapper -->
+            <div class="swiper-wrapper" id= "window-height-wrapper">
+                <!-- Slides -->
+                <!-- LOCATION -->
+                <div class="swiper-slide" id= "window-height-map">
+                  <div id='map'>
+                    <p class="status">Waiting for your location...</p>
+                    <p class="resize"></p>
+                  </div>
+                </div>
+
+
+                <!-- OUTCOME -->
+                <div class="swiper-slide slide-outcome" id= "window-height-outcome">
+                  <div>GPS Sensor:</div>
+                  <div id = "lat">Initial Latitude: </div>
+                  <div id = "long">Initial Longitude: </div>
+                  <div id = "mylat">Current Latitude: </div>
+                  <div id = "mylong">Current Longitude: </div>
+                  <hr></hr>
+                  <div>Reverse Geocoding via OpenCage API:</div>
+                  <div id = "state">State: </div>
+                  <div id = "country-code">Country Code: </div>
+                  <hr></hr>
+                  <div>Hourly Temperature via Weather Underground API:</div>
+                  <div id = "air-temperature">Air Temperature: </div> 
+                  <div id = "dewpoint">Dewpoint: </div> 
+                  <div id = "humidity">Humidity: </div> 
+                  <div id = "wind-speed">Wind Speed: </div> 
+                  <div id = "condition">Condition: </div> 
+                  <hr></hr>
+                  <div>Clothing Insulation:</div>
+                  <div id = "top-CLO"></div> 
+                  <div id = "bottom-CLO">Bottom CLO: </div> 
+                  <div id = "sum-CLO">Sum CLO: </div> 
+                  <hr></hr>
+                  <div>Comfort:</div>
+                  <div id = "predicted-comfort">Predicted Comfort: </div> 
+                  <div id = "user-bias">User Bias: </div> 
+                  <div id = "evaluated-comfort">Evaluated Comfort: </div> 
+
+                  <div class="button button-fill" id="comfort-status"></div>
+                  <p class="buttons-row">
+                    <a href="#" class="button button-raised button-fill color-red" id="feedback-hot">Too Hot</a>
+                    <a href="#" class="button button-raised button-fill color-green" id="feedback-good">Good</a>
+                    <a href="#" class="button button-raised button-fill color-blue" id="feedback-cold">Too Cold</a>
+                  </p>
+                  <div class="button button-fill color-yellow" id="clear-bias">Clear Bias</div>
+                </div>
+
+                <!-- CLOTHING -->
+                <div class="swiper-slide clothing" id= "window-height-clothing">
+                  <div class="content-block-title wear-title">WEAR</div>
+                  <div class="clothing-container swiper-2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide clothing-slide" id="t1">
+                        <img style:"object-fit: cover;" src="assets/top-01.png">
+                        <div class="clothing-label">LONG SLEEVE SHIRT (0.33)</div>
+                      </div>
+
+                      <div class="swiper-slide clothing-slide" id="t2">
+                        <img style:"object-fit: cover;" src="assets/top-02.png">
+                        <div class="clothing-label">SUIT JACKET (0.56)</div>
+                      </div>
+                      
+                      <div class="swiper-slide clothing-slide" id="t3">
+                        <img style:"object-fit: cover;" src="assets/top-03.png">
+                        <div class="clothing-label">SLEEVELESS (0.18)</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clothing-container swiper-3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide clothing-slide" id="b1">
+                        <img style:"object-fit: cover;" src="assets/bottom-01.png">
+                        <div class="clothing-label">BOTTOM COVERALLS (1.09)</div>
+                      </div>
+                      <div class="swiper-slide clothing-slide" id="b2">
+                        <img style:"object-fit: cover;" src="assets/bottom-02.png">
+                        <div class="clothing-label">SHORTS (0.12)</div>
+                      </div>
+                      <div class="swiper-slide clothing-slide" id="b"3>
+                        <img style:"object-fit: cover;" src="assets/bottom-03.png">
+                        <div class="clothing-label">KNEE-LENGTH SKIRT (0.25)</div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script src="js/weather.js"></script>
+    <script src="js/my.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <script src="js/location.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="js/calculations.js"></script>
+
+
+
+  </body>
+</html>

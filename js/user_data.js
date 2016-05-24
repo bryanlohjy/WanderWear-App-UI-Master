@@ -1,0 +1,1 @@
+var data = new Firebase('https://potato-tracker.firebaseio.com');

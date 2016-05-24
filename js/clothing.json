@@ -1,0 +1,36 @@
+{
+ "top": [
+    { 
+        "type":"Shirts",
+        "description": "Long-sleeve, shirt collar (broadcloth)",
+        "CLO":0.33
+    }, 
+    { 
+        "type":"Suit Jackets and Vests (lined)",
+        "description": "Double-breasted suit jacket (tweed)",
+        "CLO":0.56
+    }, 
+    { 
+        "type":"Shirts",
+        "description": "Sleeveless, scoop neck (broadcloth)",
+        "CLO":0.18
+    } 
+    ],
+ "bottom": [
+    { 
+        "type":"Trousers and Coveralls",
+        "description": "Insulated coveralls (multicomponent)",
+        "CLO":1.09
+    }, 
+    { 
+        "type":"Trousers and Coveralls",
+        "description": "Walking shorts(denim)",
+        "CLO":0.12
+    }, 
+    { 
+        "type":"Skirts",
+        "description": "Full gathered, knee length (denim)",
+        "CLO":0.25
+    } 
+    ]
+ }
