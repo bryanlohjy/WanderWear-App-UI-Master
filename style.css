@@ -26,6 +26,10 @@ body {
 	height:inherit;
 }
 
+#info-wrapper{
+	color:yellow;
+}
+
 .slide-outcome{
 	color:black;
 	font-size: 10px;
