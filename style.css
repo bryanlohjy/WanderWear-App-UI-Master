@@ -51,3 +51,7 @@ body {
 .left div{
 	padding-left: 16px;
 }
+
+.page-content{
+	background-color:black;
+}
