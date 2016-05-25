@@ -2,7 +2,11 @@ var my_top_readout = 0;
 var my_bottom_readout = 0;
 
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+    modalTitle:'WanderWear',
+    modalButtonOk: 'Yeah',
+    modalButtonCancel: 'Nah',
+});
 
 // Export selectors engine
 var $$ = Dom7;
@@ -107,6 +111,20 @@ var mySwiper3 = myApp.swiper('.swiper-3',
             }
 });
 
+
+// Clear User Bias Confirmation
+$$('.confirm-title-ok-cancel').on('click', function () {
+    myApp.confirm('So, you want me to forget your comfort profile. Are you sure?', 'Forget you?', 
+      function () {
+        myApp.alert('You mean nothing to me.');
+      },
+      function () {
+        myApp.alert('HAHAHA. Great joke, buddy. Have you tried stand up?');
+      }
+    );
+});          
+
+
 // Establishing Size of Map Page
 $$(document).on('pageBeforeInit', function (e) {
     var page = e.detail.page;
@@ -115,6 +133,9 @@ $$(document).on('pageBeforeInit', function (e) {
         map.invalidateSize()
     }
 });
+
+
+
 
 // // Generate dynamic page
 // var dynamicPageIndex = 0;
