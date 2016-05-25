@@ -61,7 +61,8 @@ var mySwiper2 = myApp.swiper(
             }
 });
 
-var mySwiper3 = myApp.swiper('.swiper-3', {
+var mySwiper3 = myApp.swiper('.swiper-3', 
+    {
 	pagination:'.swiper-3 .swiper-pagination',
 	spaceBetween: 50,
 	onInit: function (bottom) {
@@ -106,12 +107,13 @@ var mySwiper3 = myApp.swiper('.swiper-3', {
             }
 });
 
-// Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
-    // run createContentPage func after link was clicked
-    $$('.create-page').on('click', function () {
-        createContentPage();
-    });
+// Establishing Size of Map Page
+$$(document).on('pageBeforeInit', function (e) {
+    var page = e.detail.page;
+    
+    if (page.name === 'location') {
+        map.invalidateSize()
+    }
 });
 
 // // Generate dynamic page

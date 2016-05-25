@@ -22,8 +22,6 @@ body {
 
 #map {
 	position:relative;
-	top:0;
-	bottom:0;
 	width:100%;
 	height:inherit;
 }
@@ -40,11 +38,6 @@ body {
 	text-align: center;
 	font-size: 20px;
 	padding-top: 30px;
-}
-
-
-.clothing{
-	background-color: black;
 }
 
 .clothing-slide img{

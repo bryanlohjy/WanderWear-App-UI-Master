@@ -1,8 +1,5 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYnJ5YW5sb2hqeSIsImEiOiJjaW12Nnd2M3QwMm1pdXBra2hmeWQ2OWI3In0.M3vzM36scSxM3aTimLK56Q';
 
-
-
-
 //https://github.com/mapbox/polyline
 //https://github.com/mapbox/intro-to-mapbox/blob/master/demos/directions.html
 
@@ -105,14 +102,14 @@ function updateLocation(position) {
   
 
     //Disable drag and zoom handlers.
-    map.dragging.disable();
-    map.touchZoom.disable();
-    map.doubleClickZoom.disable();
-    map.scrollWheelZoom.disable();
-    map.keyboard.disable();
+    // map.dragging.disable();
+    // map.touchZoom.disable();
+    // map.doubleClickZoom.disable();
+    // map.scrollWheelZoom.disable();
+    // map.keyboard.disable();
 
     // Disable tap handler, if present.
-    if (map.tap) map.tap.disable();
+    // if (map.tap) map.tap.disable();
     //Current location marker
     marker = L.marker([mylat, mylong], {
       icon: L.mapbox.marker.icon({
@@ -124,13 +121,13 @@ function updateLocation(position) {
 
 
     //Destination location marker
-    // destinationmarker =L.marker([mylat, mylong], {
-    //   icon: L.mapbox.marker.icon({
-    //   'marker-color': '#f86767'
-    //   })
-    // });
+    destinationmarker =L.marker([mylat, mylong], {
+      icon: L.mapbox.marker.icon({
+      'marker-color': '#f86767'
+      })
+    });
 
-    // destinationmarker.addTo(map);
+    destinationmarker.addTo(map);
 
   } else {
     // Update the marker with the new coords
