@@ -30,7 +30,7 @@ function currentPosition(position){
 			$('#country-code').append(country_code);
 
 	    	//Getting weather info from location
-	    	var wunderground_url = "http://api.wunderground.com/api/86abf2a752b687fa/hourly/q/"+country_code+"/"+state+".json";
+	    	var wunderground_url = "https://api.wunderground.com/api/86abf2a752b687fa/hourly/q/"+country_code+"/"+state+".json";
 
 	    	$.ajax({
 	    		type:'GET',
