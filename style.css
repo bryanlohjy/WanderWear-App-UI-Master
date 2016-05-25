@@ -48,3 +48,6 @@ body {
 	height: auto;
 }
 
+.left div{
+	padding-left: 16px;
+}
