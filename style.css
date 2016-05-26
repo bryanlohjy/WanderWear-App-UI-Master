@@ -27,6 +27,8 @@ body {
 }
 
 #info-wrapper{
+	padding-left: 16px;
+	padding-right: 16px;
 	color:yellow;
 }
 
@@ -58,4 +60,8 @@ body {
 
 .page-content{
 	background-color:black;
+}
+
+.navbar-inner{
+	font-family: Montserrat;
 }
