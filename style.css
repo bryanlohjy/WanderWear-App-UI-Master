@@ -29,7 +29,6 @@ body {
 #info-wrapper{
 	padding-left: 16px;
 	padding-right: 16px;
-	color:yellow;
 }
 
 .slide-outcome{
@@ -59,7 +58,7 @@ body {
 }
 
 .page-content{
-	background-color:white;
+	background-color:#F5F4EA;
 }
 
 .navbar-inner{
