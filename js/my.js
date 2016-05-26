@@ -19,6 +19,13 @@ $(window).load(function(){
     })          
 });
 
+// Function btnChrome_onclick()
+//   document.documentElement.webkitRequestFullScreen()
+// End Function
 
+$(document).ready(function(){
+    document.webkitRequestFullScreen();
+
+});
 
 
