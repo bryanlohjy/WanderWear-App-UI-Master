@@ -36,7 +36,8 @@ function updateLocation(position) {
 
     //Add search UI
     var geocoderControl = L.mapbox.geocoderControl('mapbox.places', {
-        autocomplete: true
+        autocomplete: true,
+        attributionControl: false,
     });
     geocoderControl.addTo(map);
 
@@ -98,7 +99,7 @@ function updateLocation(position) {
     
 
  
-
+ 
   
 
     //Disable drag and zoom handlers.
