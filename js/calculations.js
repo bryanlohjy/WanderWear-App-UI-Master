@@ -112,12 +112,12 @@ setInterval (function statusIndicator(){
 		if(calc_predicted_comfort < 1) {                            
 		// $('.slide-outcome').css({'background-color':'#00cc00'});
 		$('#comfort-status').css({'background-color':'#00cc00'});
-		$('#comfort-status').html("You are good to go.");
+		$('#comfort-status').html("You are good to go. Start journey!");
 
 		}else{
 		// $('.slide-outcome').css({'background-color':'red'});
 		$('#comfort-status').css({'background-color':'red'});
-		$('#comfort-status').html("Try again.");
+		$('#comfort-status').html("Try again. Go out uncomfortable?");
 		}       
 
 

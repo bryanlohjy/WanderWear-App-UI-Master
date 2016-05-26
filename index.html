@@ -20,30 +20,31 @@
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <!-- Montserrat Font -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
     
   </head>
 
   <body>
     <div class="views">
       <div class="view view-main">
-        <div class="pages navbar-fixed theme-yellow">
+        <div class="pages navbar-fixed theme-black">
           
           <div data-page="index" class="page">
             <div class="navbar">
               <div class="navbar-inner">
                 <div class="left">
-                  <div class="color-black">WANDERWEAR</div>
+                  <div class="color-yellow">WANDERWEAR</div>
                 </div>
                 <!-- navbar icons -->
                 <div class="right">
                   <a href="#" id="clear-bias" class="link icon-only confirm-title-ok-cancel">
-                    <i class="fa fa-undo fa-fw color-black"></i>
+                    <i class="fa fa-undo fa-fw color-yellow"></i>
                   </a>
                   <a href="#info" class="link icon-only">
-                    <i class="fa fa-info-circle fa-fw color-black"></i>
+                    <i class="fa fa-info-circle fa-fw color-yellow"></i>
                   </a>
                   <a href="#location" class="link icon-only">
-                    <i class="fa fa-map-marker fa-fw color-black"></i>
+                    <i class="fa fa-map-marker fa-fw color-yellow"></i>
                   </a>
                 </div>
 
@@ -52,7 +53,56 @@
  
             <div class="page-content">
 
-                  <div id="clothing-container">
+            <div id="clothing-container">  
+              <div class="swiper-custom">
+                <div class="top-container swiper-container swiper-2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide clothing-slide" id="t1">
+                      <img style:"object-fit: cover;" src="assets/top-01.png">
+                      <div class="clothing-label">LONG SLEEVE SHIRT (0.33)</div>
+                    </div>
+
+                    <div class="swiper-slide clothing-slide" id="t2">
+                      <img style:"object-fit: cover;" src="assets/top-02.png">
+                      <div class="clothing-label">SUIT JACKET (0.56)</div>
+                    </div>
+                              
+                    <div class="swiper-slide clothing-slide" id="t3">
+                      <img style:"object-fit: cover;" src="assets/top-03.png">
+                      <div class="clothing-label">SLEEVELESS (0.18)</div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>  
+
+              <div class="swiper-custom">
+                <div class="bottom-container swiper-container swiper-3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide clothing-slide" id="b1">
+                      <img style:"object-fit: cover;" src="assets/bottom-01.png">
+                      <div class="clothing-label">BOTTOM COVERALLS (1.09)</div>
+                    </div>
+                          
+                    <div class="swiper-slide clothing-slide" id="b2">
+                      <img style:"object-fit: cover;" src="assets/bottom-02.png">
+                      <div class="clothing-label">SHORTS (0.12)</div>
+                    </div>
+
+                    <div class="swiper-slide clothing-slide" id="b"3>
+                      <img style:"object-fit: cover;" src="assets/bottom-03.png">
+                      <div class="clothing-label">KNEE-LENGTH SKIRT (0.25)</div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+
+
+                 <!--  <div id="clothing-container">
                     <div class="top-container swiper-2">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide clothing-slide" id="t1">
@@ -70,11 +120,11 @@
                           <div class="clothing-label">SLEEVELESS (0.18)</div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
 
 
 
-                    <div class="bottom-container swiper-3">
+                    <!-- <div class="bottom-container swiper-3">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide clothing-slide" id="b1">
                           <img style:"object-fit: cover;" src="assets/bottom-01.png">
@@ -92,7 +142,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
                     <a href="#start" class="button button-fill" id="comfort-status"></a>
             </div>

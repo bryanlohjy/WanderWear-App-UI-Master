@@ -17,15 +17,13 @@ var mainView = myApp.addView('.view-main', {
 });
 
 // Init slider and store its instance in mySwiper variable
-var mySwiper = myApp.swiper('.swiper-container', {
-    direction: 'vertical'
-});
 
 var mySwiper2 = myApp.swiper(
 	'.swiper-2',
 	{
 		pagination:'.swiper-2 .swiper-pagination',
-		spaceBetween: 50,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
 		onInit: function (top){
                 var my_top = top.activeIndex;
 	      		my_top_readout = my_top;
@@ -68,7 +66,8 @@ var mySwiper2 = myApp.swiper(
 var mySwiper3 = myApp.swiper('.swiper-3', 
     {
 	pagination:'.swiper-3 .swiper-pagination',
-	spaceBetween: 50,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
 	onInit: function (bottom) {
     			var my_bottom = bottom.activeIndex;
     			my_bottom_readout = my_bottom;

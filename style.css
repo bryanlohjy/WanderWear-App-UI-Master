@@ -59,9 +59,15 @@ body {
 }
 
 .page-content{
-	background-color:black;
+	background-color:white;
 }
 
 .navbar-inner{
 	font-family: Montserrat;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 46px;
+    height: 25px;
+
 }
