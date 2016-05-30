@@ -480,7 +480,8 @@ var mySwiper3 = myApp.swiper('.swiper-3',
 $$('.confirm-title-ok-cancel').on('click', function () {
     myApp.confirm('So, you want me to forget your comfort profile. Are you sure?', 'Forget you?', 
       function () {
-        myApp.alert('You mean nothing to me.');
+        myApp.alert('You mean nothing to me.');1
+        usersRef.child("feedback").set(0);
       },
       function () {
         myApp.alert('HAHAHA. Great joke, buddy. Have you tried stand up?');

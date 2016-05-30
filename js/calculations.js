@@ -50,29 +50,15 @@ var rootRef = new Firebase('https://wanderwear.firebaseio.com/');
 
 //writing data
 
-var usersRef = rootRef.child("users");
+var usersRef = rootRef.child("users").child("user-id"+Math.floor(Date.now() / 1000));
 
-$( "#feedback-hot" ).click(function() {
-	usersRef.child("user-1").child("feedback").push(2)
-	
+$( "#thanks-button" ).click(function() {
+	usersRef.child("feedback").push(feedback_val);
 });
 
-$( "#feedback-good" ).click(function() {
-	//no changes to bias
-});
-
-$( "#feedback-cold" ).click(function() {
-	usersRef.child("user-1").child("feedback").push(-2)
-	
-});
-
-$( "#clear-bias" ).click(function() {
-	usersRef.child("user-1").child("feedback").set(0)
-	
-});
 
 //turning object list to array of numbers
-usersRef.child("user-1").child("feedback").on('value', function(child_snapshot) {
+usersRef.child("feedback").on('value', function(child_snapshot) {
 	
 	var bias_list = child_snapshot.val();
 
