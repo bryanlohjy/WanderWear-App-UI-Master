@@ -108,15 +108,15 @@ setInterval (function statusIndicator(){
 	// console.log(calc_evaluated_comfort);
 	// console.log(calc_predicted_comfort);
 
-		if(PMVval < 0.85 && PMVval > -0.85) {                            
+		if(PMVval < 0.80 && PMVval > -0.80) {                            
 			//good
 			$('#comfort-status').css({'background-color':'#AED191','color':'#006E32','border':'3px solid #006E32'});
 		}else{
 			//too cold
-			if(PMVval > 0.85) {
+			if(PMVval > 0.80) {
 				// $('.slide-outcome').css({'background-color':'red'});
 				$('#comfort-status').css({'background-color':'#F4AAAA','color':'#E20613','border':'3px solid #E20613'});}
-			else if(PMVval < -0.85){
+			else if(PMVval < -0.80){
 				$('#comfort-status').css({'background-color':'#A2D8E5','color':'#2C589F','border':'3px solid #2C589F'});
 			}
 		}       
