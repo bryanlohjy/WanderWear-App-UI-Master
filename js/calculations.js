@@ -68,7 +68,7 @@ usersRef.child("feedback").on('value', function(child_snapshot) {
 
 	var sum = 0;
 	for(var k = 0; k < bias_array.length; k++){
-    	var sum = sum + bias_array[k];
+    	sum = sum + bias_array[k];
 	}
 
 	var average_bias = sum/bias_array.length;
