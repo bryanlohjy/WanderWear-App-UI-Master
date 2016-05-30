@@ -4,14 +4,16 @@ body {
 }
 
 .swiper-2{
-	height:250px;
-	padding-top: 30px;
+	height:245px;
+  bottom:5px;
 }
 
 .swiper-3{
-	height:250px;
-	padding-bottom: 30px;
+	height:245px;
+  bottom:16px;
 }
+
+
 
 .page-background{
   width:100%;
@@ -26,6 +28,7 @@ body {
   object-fit: fill;
   overflow: hidden;
 }
+
 
 .clothing-label{
   font-family: Montserrat, sans-serif;
@@ -51,6 +54,11 @@ body {
 	font-size: 10px;
 }
 
+#comfort-status{
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 
 
@@ -66,7 +74,7 @@ body {
 	overflow: hidden;
 	display:block;
 	margin: auto;
-	width:40%;
+	width:50%;
 	height: auto;
 }
 
@@ -78,6 +86,7 @@ body {
 	background-color:#F5F4EA;
 }
 
+
 .navbar-inner{
 	font-family: Montserrat, sans-serif;
 	font-weight: bold;
@@ -85,12 +94,36 @@ body {
 }
 
 .swiper-button-next, .swiper-button-prev {
-    width: 46px;
-    height: 25px;
+    width: 70px;
+    height: 20px;
 
 }
 
+/*override framework7 defaults*/
+#clothing-container{
+  padding-top: 25px !important;
+}
+.right .link{
+  padding-left: 8px !important;
+}
+i {
+  color:yellow !important;
+}
 
+.icon-only {
+  color:yellow !important;
+}
+.button{
+  margin:auto;
+  width:50%;
+  padding: 4px 0 40px;
+  bottom: 18px;
+
+
+  background-color:#A09FA0;
+  color:#000000;
+  border:3px solid #000000;
+}
 
 /*prettify range*/
 input[type='range'] {
