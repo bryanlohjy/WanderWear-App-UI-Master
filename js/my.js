@@ -23,9 +23,5 @@ $(window).load(function(){
 //   document.documentElement.webkitRequestFullScreen()
 // End Function
 
-$(document).ready(function(){
-    document.webkitRequestFullScreen();
-
-});
 
 
