@@ -63,7 +63,7 @@ body {
 }
 
 #there-button{
-  top:200px;
+  top:140px;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -117,7 +117,7 @@ body {
 
 #start-parent {
   display: table;
-  margin-top:95px;
+  margin-top:170px;
   width: 100%;
   height: 200px;
 }

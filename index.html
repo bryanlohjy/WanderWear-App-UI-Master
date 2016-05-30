@@ -20,7 +20,13 @@
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <!-- Montserrat Font -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="animate.css"/>
 
+    <!-- WOW animations -->
+    <script src="js/wow.js"></script>
+    <script type="text/javascript">
+    new WOW().init();
+    </script>
     
 
     
@@ -200,12 +206,12 @@
               <div>
                 <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
               </div>
-              <div id="start-parent">
+              <div id="start-parent" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div id="start-message">
                   Enjoy your journey.
                 </div>
               </div>
-              <a href="#feedback" class="button button-fill" id="there-button">I'm there!</a>
+              <a href="#feedback" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="5s" id="there-button">I'm there!</a>
               <!-- <a href="#feedback" class="button button-fill color-black">I'm there!</a> -->
             </div>
           </div>
@@ -225,8 +231,8 @@
                 <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
               </div>
               <div id="result-parent">
-                <div id="result">
-                  1
+                <div id="result" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                  Congratulations on making it to your destination! Help me improve by telling me how I went.
                 </div>
               </div>
 <!--          <p class="buttons-row">
@@ -254,9 +260,8 @@
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/feedback-slider.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-    <!-- Path to Framework7 Library JS-->
     <script src="js/weather.js"></script>
-    #<script src="js/my.js"></script>
+    <script src="js/my.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
     <script src="js/polyline.js"></script>
     <script src="js/location.js"></script>
