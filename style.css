@@ -13,8 +13,6 @@ body {
   bottom:16px;
 }
 
-
-
 .page-background{
   width:100%;
   height:100%;
@@ -73,12 +71,52 @@ body {
 }
 
 #thanks-button{
-  top:450px;
+  top:30px;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 20px;
   color:yellow;
 }
+
+#temp{
+  margin-top: 95px;
+  display: inline-block;
+  width:100%;
+  font-family: Montserrat, sans-serif;
+  color:black;
+}
+
+#cold{
+  width:50%;
+  float:left;
+  text-align: left;
+  padding-left: 24px;
+}
+
+#hot{
+  float:right;
+  text-align: right;
+  padding-right: 24px;
+}
+
+#result-parent {
+  display: table;
+  margin-top:95px;
+  width: 100%;
+  height: 200px;
+}
+
+#result{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+  font-family: Montserrat, sans-serif;
+  color:black;
+}
+
+
+
 
 
 
@@ -143,7 +181,7 @@ i {
 /*prettify range*/
 input[type='range'] {
   position: relative;
-  top: 360px;
+  top: 120px;
   left: 50%;
 
   border: solid 0 transparent;
