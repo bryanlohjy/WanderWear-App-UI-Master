@@ -1,6 +1,8 @@
 geolocation = navigator.geolocation;
 geolocation.getCurrentPosition(currentPosition);
 
+var PMVval = 0;
+
 
 //Reverse Geocoding via OpenCage API: Getting Location Info from current coordinates
 function currentPosition(position){
@@ -41,7 +43,8 @@ function currentPosition(position){
 	    			var temperature = weather.hourly_forecast[0].temp.metric;
 	    			var dewpoint = weather.hourly_forecast[0].dewpoint.metric;
 	    			var humidity = weather.hourly_forecast[0].humidity;
-	    			var wind_speed = weather.hourly_forecast[0].wspd.metric;
+	    			// converting wind speed from kph to ms
+	    			var wind_speed = weather.hourly_forecast[0].wspd.metric * 0.277778;
 	    			var condition = weather.hourly_forecast[0].condition;
 
 
@@ -79,28 +82,6 @@ function currentPosition(position){
 											var PA = RH*10*FNPS;
 											var ICL = 0.155*CLO;
 											var M = MET*58.15;
-
-											$(function(){
-											    if(CLO > temperature/12) {                            
-											        // $('.slide-outcome').css({'background-color':'#00cc00'});
-											    }else{
-											    	// $('.slide-outcome').css({'background-color':'red'});
-											    }       
-											                                                   
-											    // $(window).resize(function(){
-											    //     var windowH = $(window).height();
-											    //     var wrapperH = $('#window-height-wrapper').height();
-											    //     var differenceH = windowH - wrapperH;
-											    //     var newH = wrapperH + differenceH;
-											    //     var truecontentH = $('window-height-content').height();
-											    //     if(windowH > truecontentH) {
-											    //         $('#window-height-wrapper').css('height', (newH)+'px');
-											    //     }
-
-											    // })          
-											});
-
-
 
 						    	// 			To Retry:
 											var CLO = sum_CLO;
@@ -169,7 +150,7 @@ function currentPosition(position){
 											var HL4 =0.0014*M*(34-TA);
 
 											//Radiation Loss
-											var HL5 =3.96*FCL*Math.pow(XN,4)-Math.pow((TRA/100),4);
+											var HL5 =3.96*FCL*(Math.pow(XN,4)-Math.pow((TRA/100),4));
 
 											//Convection Loss
 											var HL6 = FCL*HC*(TCL-TA);
@@ -187,8 +168,11 @@ function currentPosition(position){
 											    }
 											}
 
-											var PMVval = TS*(M-HL1-HL2-HL3-HL4-HL5-HL6);
-											var PPDval = 100-95*Math.exp(-0.03353*Math.pow(PMVval,4)-0.2179*Math.pow(PMVval,2));
+											PMVval = TS*(M-HL1-HL2-HL3-HL4-HL5-HL6);
+
+											var PPDval = 100-95*Math.exp(-0.03353*Math.pow(PMVval,4)-0.2179*Math.pow(PMVval,2));							
+											
+
 
 											console.log("HC: ", HC);
 											console.log("HCF: ", HCF);
@@ -222,6 +206,29 @@ function currentPosition(position){
 											console.log("TPO: ", TPO);
 											console.log("PMVval: ", PMVval);
 											console.log("PPDval: ", PPDval);
+
+											// user output. threshold of 1 on either side
+											$(function(){
+											    if(PMVval > temperature/12) {                            
+											        // $('.slide-outcome').css({'background-color':'#00cc00'});
+											    }else{
+											    	// $('.slide-outcome').css({'background-color':'red'});
+											    }       
+											                                                   
+											    // $(window).resize(function(){
+											    //     var windowH = $(window).height();
+											    //     var wrapperH = $('#window-height-wrapper').height();
+											    //     var differenceH = windowH - wrapperH;
+											    //     var newH = wrapperH + differenceH;
+											    //     var truecontentH = $('window-height-content').height();
+											    //     if(windowH > truecontentH) {
+											    //         $('#window-height-wrapper').css('height', (newH)+'px');
+											    //     }
+
+											    // })          
+											});
+
+
 												// Reevaluating with User's BIAS
 												// Read Firebase
 

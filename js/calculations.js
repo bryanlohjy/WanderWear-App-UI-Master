@@ -18,7 +18,6 @@
 // });
 
 
-
 setInterval (function sumCLO(){
 //Calculating CLO Values
 var c_topCLO = document.getElementById('top-CLO').innerHTML;
@@ -29,6 +28,8 @@ var calc_bottomCLO = Number(c_bottomCLO.replace(/[^0-9\.]+/g,""));
 
 var sum_CLO = calc_topCLO + calc_bottomCLO;
 $('#sum-CLO').html("Sum CLO: " + sum_CLO);
+
+
 
 
 //Calculating Comfort - inaccurate placeholder calculation
@@ -108,24 +109,24 @@ setInterval (function statusIndicator(){
 	// console.log(calc_predicted_comfort);
 
 
-	if(calc_evaluated_comfort == 0) {     
-		if(calc_predicted_comfort < 1) {                            
-		// $('.slide-outcome').css({'background-color':'#00cc00'});
-		$('#comfort-status').css({'background-color':'#AED191','color':'#006E32','border':'3px solid #006E32'});
-		}else{
-		// $('.slide-outcome').css({'background-color':'red'});
-		$('#comfort-status').css({'background-color':'#F4AAAA','color':'#E20613','border':'3px solid #E20613'});
-		}       
+	// if(calc_evaluated_comfort == 0) {     
+	// 	if(calc_predicted_comfort < 1) {                            
+	// 	// $('.slide-outcome').css({'background-color':'#00cc00'});
+	// 	$('#comfort-status').css({'background-color':'#AED191','color':'#006E32','border':'3px solid #006E32'});
+	// 	}else{
+	// 	// $('.slide-outcome').css({'background-color':'red'});
+	// 	$('#comfort-status').css({'background-color':'#F4AAAA','color':'#E20613','border':'3px solid #E20613'});
+	// 	}       
 
 
-	}else{
-		if(calc_evaluated_comfort < 1) {                            
-		// $('.slide-outcome').css({'background-color':'#00cc00'});
-		$('#comfort-status').css({'background-color':'#AED191','color':'#006E32','border':'3px solid #006E32'});
+	// }else{
+	// 	if(calc_evaluated_comfort < 1) {                            
+	// 	// $('.slide-outcome').css({'background-color':'#00cc00'});
+	// 	$('#comfort-status').css({'background-color':'#AED191','color':'#006E32','border':'3px solid #006E32'});
 
-		}else{
-		// $('.slide-outcome').css({'background-color':'red'});
-		$('#comfort-status').css({'background-color':'#F4AAAA','color':'#E20613','border':'3px solid #E20613'});
-		}       
-	}
+	// 	}else{
+	// 	// $('.slide-outcome').css({'background-color':'red'});
+	// 	$('#comfort-status').css({'background-color':'#F4AAAA','color':'#E20613','border':'3px solid #E20613'});
+	// 	}       
+	// }
 },500);
