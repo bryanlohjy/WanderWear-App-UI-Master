@@ -159,33 +159,23 @@
                 <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
               </div>
               <div id="info-wrapper">
-                <div>GPS Sensor:</div>
-                <div id = "lat">Initial Latitude: </div>
-                <div id = "long">Initial Longitude: </div>
-                <div id = "mylat">Current Latitude: </div>
-                <div id = "mylong">Current Longitude: </div>
+                <div id ="info-location"></div>
                 <hr></hr>
-                <div>Reverse Geocoding via OpenCage API:</div>
-                <div id = "state">State: </div>
-                <div id = "country-code">Country Code: </div>
-                <hr></hr>
-                <div>Hourly Temperature via Weather Underground API:</div>
-                <div id = "air-temperature">Air Temperature: </div> 
-                <div id = "dewpoint">Dewpoint: </div> 
-                <div id = "humidity">Humidity: </div> 
-                <div id = "wind-speed">Wind Speed: </div> 
-                <div id = "condition">Condition: </div> 
-                <hr></hr>
-                <div>Clothing Insulation:</div>
-                <div id = "top-CLO"></div> 
-                <div id = "bottom-CLO">Bottom CLO: </div> 
-                <div id = "sum-CLO">Sum CLO: </div> 
-                <hr></hr>
-                <div>Comfort:</div>
-                <div id = "predicted-comfort">Predicted Comfort: </div> 
-                <div id = "user-bias">User Bias: </div> 
-                <div id = "evaluated-comfort">Evaluated Comfort: </div> 
+                <div id="weather-details">
+                  <div id = "condition"></div> 
+                  <div id = "air-temperature"></div> 
+                  <div id = "feels-like"></div> 
+                  <div id = "wind-speed"></div>
+                  <div id = "humidity"></div>
+                </div>
               </div>
+              <div id="credit-wrapper">
+                <div class = "ack">WanderWear is based on the existing research on thermal comfort done by Povl Ole Fanger.
+                </div>
+                <div class = "ack">Designed and developed by Bryan Loh. 2016</div>
+              </div>
+              
+
             </div>
           </div>
 
@@ -208,7 +198,7 @@
               </div>
               <div id="start-parent" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div id="start-message">
-                  Enjoy your journey.
+                  Have a wanderful journey.
                 </div>
               </div>
               <a href="#feedback" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="5s" id="there-button">I'm there!</a>
@@ -232,7 +222,8 @@
               </div>
               <div id="result-parent">
                 <div id="result" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                  Congratulations on making it to your destination! Help me improve by telling me how I went.
+                  <div>Congratulations on making it to your destination!</div>
+                  <div>Help me improve by telling me how I went.</div>
                 </div>
               </div>
 <!--          <p class="buttons-row">

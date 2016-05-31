@@ -71,8 +71,11 @@ function currentPosition(position){
 
 	    	var country_code = location.results[0].components.country_code;
 
-	    	$('#state').append(state);
-			$('#country-code').append(country_code);
+
+	    	$('#info-location').html("Current weather for " + state+", "+country_code.toUpperCase());
+
+	  //   	$('#state').append(state);
+			// $('#country-code').append(country_code);
 
 	    	//Getting weather info from location
 	    	var wunderground_url = "https://api.wunderground.com/api/86abf2a752b687fa/hourly/q/"+country_code+"/"+state+".json";
@@ -89,6 +92,7 @@ function currentPosition(position){
 	    			// converting wind speed from kph to ms
 	    			wind_speed = weather.hourly_forecast[0].wspd.metric * 0.277778;
 	    			condition = weather.hourly_forecast[0].condition;
+	    			feels_like = weather.hourly_forecast[0].feelslike.metric;
 
 
 
@@ -107,11 +111,13 @@ function currentPosition(position){
 						    			bottom_CLO = clothing.bottom[my_bottom_readout].CLO;
 						    			sum_CLO = top_CLO + bottom_CLO;
 
-						    			$('#air-temperature').append(temperature);
-										$('#dewpoint').append(dewpoint);
-										$('#humidity').append(humidity);
-										$('#wind-speed').append(wind_speed);
-										$('#condition').append(condition);
+						    			pretty_wind_speed=Number(wind_speed).toFixed(2);  
+
+						    			$('#air-temperature').html("Temperature: "+temperature+" °C");
+										$('#feels-like').html("Feels like: "+feels_like+" °C");
+										$('#humidity').html("Humidity: "+humidity+" %");
+										$('#wind-speed').html("Wind Speed: "+pretty_wind_speed+" m/s");
+										$('#condition').html("Condition: "+condition);
 
 						    				// CALCULATIONS
 						    	// 			To Retry:
