@@ -4,8 +4,8 @@ var my_bottom_readout = 0;
 // Initialize your app
 var myApp = new Framework7({
     modalTitle:'WanderWear',
-    modalButtonOk: 'Yeah',
-    modalButtonCancel: 'Nah',
+    modalButtonOk: 'Yes',
+    modalButtonCancel: 'No',
 });
 
 // Export selectors engine
@@ -478,13 +478,13 @@ var mySwiper3 = myApp.swiper('.swiper-3',
 
 // Clear User Bias Confirmation
 $$('.confirm-title-ok-cancel').on('click', function () {
-    myApp.confirm('So, you want me to forget your comfort profile. Are you sure?', 'Forget you?', 
+    myApp.confirm('Do you want me to forget your comfort profile?', 'Forget you?', 
       function () {
         myApp.alert('You mean nothing to me.');1
         usersRef.child("feedback").set(0);
       },
       function () {
-        myApp.alert('HAHAHA. Great joke, buddy. Have you tried stand up?');
+        myApp.alert('Great.');
       }
     );
 });          
