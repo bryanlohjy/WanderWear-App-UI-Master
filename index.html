@@ -201,7 +201,7 @@
                   Have a wanderful journey.
                 </div>
               </div>
-              <a href="#feedback" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="5s" id="there-button">I'm there!</a>
+              <a href="#feedback" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="2s" id="there-button">I'm there!</a>
               <!-- <a href="#feedback" class="button button-fill color-black">I'm there!</a> -->
             </div>
           </div>
@@ -221,9 +221,9 @@
                 <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
               </div>
               <div id="result-parent">
-                <div id="result" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                  <div>Congratulations on making it to your destination!</div>
-                  <div>Help me improve by telling me how I went.</div>
+                <div id="finish-message" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                  <div id="congrats">Congratulations, you've made it!</div>
+                  <hr></hr>
                 </div>
               </div>
 <!--          <p class="buttons-row">
@@ -231,12 +231,17 @@
                   <a href="#" class="button button-raised button-fill color-green" id="feedback-good">Good</a>
                   <a href="#" class="button button-raised button-fill color-blue" id="feedback-cold">Too Cold</a>
               </p>     -->
-              <input id="feedback-slider" type='range' min='1' max='7' value='4' step='1'/>
-              <div id="temp">
-                <div id="cold">cold</div>
-                <div id="hot">hot</div>
+              <div id="feedback-wrapper" class="results-sub wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
+                <div id="result" class="results-sub">Help me improve by telling me how I went.</div>
+                <div id="feedback-temp">
+                  <input id="feedback-slider" type='range' min='1' max='7' value='4' step='1'/>
+                  <div id="temp">
+                    <div id="cold">cold</div>
+                    <div id="hot">hot</div>
+                  </div>
+                </div>
               </div>
-              <a href="#index" class="button button-fill" id="thanks-button">Thanks!</a>             
+              <a href="#index" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="2s" id="thanks-button">Thanks!</a>             
                 
             </div>
           </div>

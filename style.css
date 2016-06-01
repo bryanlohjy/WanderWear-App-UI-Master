@@ -121,7 +121,7 @@ body {
 }
 
 #there-button{
-  top:140px;
+  top:130px;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -129,7 +129,7 @@ body {
 }
 
 #thanks-button{
-  top:30px;
+  top:52px;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -137,7 +137,7 @@ body {
 }
 
 #temp{
-  margin-top: 95px;
+  margin-top: 0px;
   display: inline-block;
   width:100%;
   font-family: Montserrat, sans-serif;
@@ -159,22 +159,48 @@ body {
 
 #result-parent {
   display: table;
-  margin-top:95px;
+  margin-top:70px;
   height: 200px;
+  height: 170px;
   width: 78%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#result{
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-
+#feedback-wrapper{
   font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  color:black;
+  text-align: center;
 }
+
+#feedback-temp{
+  margin-top:45px;
+}
+
+#result{
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+  height:10px;
+  width: 50%;
+}
+
+#finish-message{
+  margin-top: 65px;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+
+.results-sub{
+  font-size: 15px;
+  margin-top: 72px;
+}
+
 
 #start-parent {
   display: table;
@@ -194,6 +220,9 @@ body {
   font-size: 20px;
 }
 
+#congrats{
+  padding-bottom: 20px;
+}
 
 
 
@@ -259,13 +288,13 @@ i {
 /*prettify range*/
 input[type='range'] {
   position: relative;
-  top: 120px;
+  top: 25px;
   left: 50%;
 
   border: solid 0 transparent;
   border-width: 0 1.5em;
   padding: auto;
-  width: 21em;
+  width: 312px;
   height: 3em;
   border-radius: .25em;
   transform: translate(-50%, -50%);
