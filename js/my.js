@@ -1,3 +1,24 @@
+// Browser Resize
+$(window).load(function(){
+    var windowH = $(window).height();
+    var deviceH = $('#device-container').height();
+    var remainderH = (windowH-deviceH)/2;
+
+    $('#device-container').css('margin-top',remainderH+'px');
+   
+    
+
+    $(window).resize(function(){
+        var windowH = $(window).height();
+        var deviceH = $('#device-container').height();
+        var remainderH = (windowH - deviceH)/2;
+
+        $('#device-container').css('margin-top',remainderH+'px');
+
+    })          
+});
+
+
 // Clothing Slider Centering
 
 $(window).load(function(){

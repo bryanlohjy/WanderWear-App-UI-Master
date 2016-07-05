@@ -33,222 +33,224 @@
   </head>
 
   <body>
-    <div class="views">
-      <div class="view view-main">
-        <div class="pages navbar-fixed theme-black">
+    <div id="device-container">
+      <div class="views">
+        <div class="view view-main">
+          <div class="pages navbar-fixed theme-black">
+            
+            <div data-page="index" class="page">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left">
+                    <div class="color-yellow">WANDERWEAR</div>
+                  </div>
+                  <!-- navbar icons -->
+                  <div class="right">
+                    <a href="#" id="clear-bias" class="link icon-only confirm-title-ok-cancel">
+                      <i class="fa fa-undo fa-fw color-yellow"></i>
+                    </a>
+                    <a href="#info" class="link icon-only">
+                      <i class="fa fa-info-circle fa-fw color-yellow"></i>
+                    </a>
+                    <a href="#location" class="link icon-only">
+                      <i class="fa fa-map-marker fa-fw color-yellow"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+   
+              <div class="page-content">
+              <div>
+                <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
+              </div>
+
+              <div id="clothing-container">  
+                <div class="swiper-custom">
+                  <div class="top-container swiper-container swiper-2">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide clothing-slide" id="t1">
+                        <img style:"object-fit: cover;" src="assets/top-01.png">
+                        <div class="clothing-label">long sleeved shirt</div>
+                      </div>
+
+                      <div class="swiper-slide clothing-slide" id="t2">
+                        <img style:"object-fit: cover;" src="assets/top-02.png">
+                        <div class="clothing-label">suit jacket</div>
+                      </div>
+                                
+                      <div class="swiper-slide clothing-slide" id="t3">
+                        <img style:"object-fit: cover;" src="assets/top-03.png">
+                        <div class="clothing-label">sleeveless</div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>  
+
+                <div class="swiper-custom">
+                  <div class="bottom-container swiper-container swiper-3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide clothing-slide" id="b1">
+                        <img style:"object-fit: cover;" src="assets/bottom-01.png">
+                        <div class="clothing-label">bottom coveralls</div>
+                      </div>
+                            
+                      <div class="swiper-slide clothing-slide" id="b2">
+                        <img style:"object-fit: cover;" src="assets/bottom-02.png">
+                        <div class="clothing-label">shorts</div>
+                      </div>
+
+                      <div class="swiper-slide clothing-slide" id="b"3>
+                        <img style:"object-fit: cover;" src="assets/bottom-03.png">
+                        <div class="clothing-label">knee-length skirt</div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              </div>
+                <a href="#start" class="button button-fill" id="comfort-status">WANDER</a>
+              </div>
+            </div>
           
-          <div data-page="index" class="page">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left">
-                  <div class="color-yellow">WANDERWEAR</div>
-                </div>
-                <!-- navbar icons -->
-                <div class="right">
-                  <a href="#" id="clear-bias" class="link icon-only confirm-title-ok-cancel">
-                    <i class="fa fa-undo fa-fw color-yellow"></i>
-                  </a>
-                  <a href="#info" class="link icon-only">
-                    <i class="fa fa-info-circle fa-fw color-yellow"></i>
-                  </a>
-                  <a href="#location" class="link icon-only">
-                    <i class="fa fa-map-marker fa-fw color-yellow"></i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
- 
-            <div class="page-content">
-            <div>
-              <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
-            </div>
-
-            <div id="clothing-container">  
-              <div class="swiper-custom">
-                <div class="top-container swiper-container swiper-2">
-                  <div class="swiper-wrapper">
-
-                    <div class="swiper-slide clothing-slide" id="t1">
-                      <img style:"object-fit: cover;" src="assets/top-01.png">
-                      <div class="clothing-label">long sleeved shirt</div>
-                    </div>
-
-                    <div class="swiper-slide clothing-slide" id="t2">
-                      <img style:"object-fit: cover;" src="assets/top-02.png">
-                      <div class="clothing-label">suit jacket</div>
-                    </div>
-                              
-                    <div class="swiper-slide clothing-slide" id="t3">
-                      <img style:"object-fit: cover;" src="assets/top-03.png">
-                      <div class="clothing-label">sleeveless</div>
-                    </div>
+          <!-- LOCATION -->
+            <div data-page="location" class="page cached">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left">
+                      <a href="#index" class="link icon-only">
+                          <i class="icon icon-back"></i>
+                      </a>
                   </div>
-
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="left">WANDER WHERE?</div>
                 </div>
-              </div>  
+              </div>
 
-              <div class="swiper-custom">
-                <div class="bottom-container swiper-container swiper-3">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide clothing-slide" id="b1">
-                      <img style:"object-fit: cover;" src="assets/bottom-01.png">
-                      <div class="clothing-label">bottom coveralls</div>
-                    </div>
-                          
-                    <div class="swiper-slide clothing-slide" id="b2">
-                      <img style:"object-fit: cover;" src="assets/bottom-02.png">
-                      <div class="clothing-label">shorts</div>
-                    </div>
+              <div class="page-content">
+                <div>
+                  <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
+                </div>
+                <div id='map'>
+                  <p class="status">Waiting for your location...</p>
+                  <p class="resize"></p>
+                </div>
+              </div>
+            </div>
 
-                    <div class="swiper-slide clothing-slide" id="b"3>
-                      <img style:"object-fit: cover;" src="assets/bottom-03.png">
-                      <div class="clothing-label">knee-length skirt</div>
-                    </div>
+          <!-- INFO -->
+            <div data-page="info" class="page cached">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left">
+                      <a href="#index" class="link icon-only">
+                          <i class="icon icon-back"></i>
+                      </a>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="left">WONDER</div>
                 </div>
               </div>
-            </div>
-              <a href="#start" class="button button-fill" id="comfort-status">WANDER</a>
-            </div>
-          </div>
-        
-        <!-- LOCATION -->
-          <div data-page="location" class="page cached">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left">
-                    <a href="#index" class="link icon-only">
-                        <i class="icon icon-back"></i>
-                    </a>
+
+              <div class="page-content">
+                <div>
+                  <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
                 </div>
-                <div class="left">WANDER WHERE?</div>
-              </div>
-            </div>
-
-            <div class="page-content">
-              <div>
-                <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
-              </div>
-              <div id='map'>
-                <p class="status">Waiting for your location...</p>
-                <p class="resize"></p>
-              </div>
-            </div>
-          </div>
-
-        <!-- INFO -->
-          <div data-page="info" class="page cached">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left">
-                    <a href="#index" class="link icon-only">
-                        <i class="icon icon-back"></i>
-                    </a>
-                </div>
-                <div class="left">WONDER</div>
-              </div>
-            </div>
-
-            <div class="page-content">
-              <div>
-                <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
-              </div>
-              <div id="info-wrapper">
-                <div id ="info-location"></div>
-                <hr></hr>
-                <div id="weather-details">
-                  <div id = "condition"></div> 
-                  <div id = "air-temperature"></div> 
-                  <div id = "feels-like"></div> 
-                  <div id = "wind-speed"></div>
-                  <div id = "humidity"></div>
-                </div>
-              </div>
-              <div id="credit-wrapper">
-                <div class = "ack">WanderWear is based on the existing research on thermal comfort done by Povl Ole Fanger.
-                </div>
-                <div class = "ack">Designed and developed by Bryan Loh. 2016</div>
-              </div>
-              
-
-            </div>
-          </div>
-
-        <!-- START -->
-          <div data-page="start" class="page cached">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left">
-                    <a href="#index" class="link icon-only">
-                        <i class="icon icon-back"></i>
-                    </a>
-                </div>
-                <div class="left">WANDER</div>
-              </div>
-            </div>
-
-            <div class="page-content">
-              <div>
-                <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
-              </div>
-              <div id="start-parent" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                <div id="start-message">
-                  Have a wanderful journey.
-                </div>
-              </div>
-              <a href="#feedback" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="2s" id="there-button">I'm there!</a>
-              <!-- <a href="#feedback" class="button button-fill color-black">I'm there!</a> -->
-            </div>
-          </div>
-
-          <!-- FEEDBACK -->
-          <div data-page="feedback" class="page cached">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left">
-                  <div>FEEDBACK</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="page-content">
-              <div>
-                <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
-              </div>
-              <div id="result-parent">
-                <div id="finish-message" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                  <div id="congrats">Congratulations, you've made it!</div>
+                <div id="info-wrapper">
+                  <div id ="info-location"></div>
                   <hr></hr>
+                  <div id="weather-details">
+                    <div id = "condition"></div> 
+                    <div id = "air-temperature"></div> 
+                    <div id = "feels-like"></div> 
+                    <div id = "wind-speed"></div>
+                    <div id = "humidity"></div>
+                  </div>
+                </div>
+                <div id="credit-wrapper">
+                  <div class = "ack">WanderWear is based on the existing research on thermal comfort done by Povl Ole Fanger.
+                  </div>
+                  <div class = "ack">Designed and developed by Bryan Loh. 2016</div>
+                </div>
+                
+
+              </div>
+            </div>
+
+          <!-- START -->
+            <div data-page="start" class="page cached">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left">
+                      <a href="#index" class="link icon-only">
+                          <i class="icon icon-back"></i>
+                      </a>
+                  </div>
+                  <div class="left">WANDER</div>
                 </div>
               </div>
-<!--          <p class="buttons-row">
-                  <a href="#" class="button button-raised button-fill color-red" id="feedback-hot">Too Hot</a>
-                  <a href="#" class="button button-raised button-fill color-green" id="feedback-good">Good</a>
-                  <a href="#" class="button button-raised button-fill color-blue" id="feedback-cold">Too Cold</a>
-              </p>     -->
-              <div id="feedback-wrapper" class="results-sub wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
-                <div id="result" class="results-sub">Help me improve by telling me how I went.</div>
-                <div id="feedback-temp">
-                  <input id="feedback-slider" type='range' min='1' max='7' value='4' step='1'/>
-                  <div id="temp">
-                    <div id="cold">cold</div>
-                    <div id="hot">hot</div>
+
+              <div class="page-content">
+                <div>
+                  <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
+                </div>
+                <div id="start-parent" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                  <div id="start-message">
+                    Have a wanderful journey.
+                  </div>
+                </div>
+                <a href="#feedback" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="2s" id="there-button">I'm there!</a>
+                <!-- <a href="#feedback" class="button button-fill color-black">I'm there!</a> -->
+              </div>
+            </div>
+
+            <!-- FEEDBACK -->
+            <div data-page="feedback" class="page cached">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left">
+                    <div>FEEDBACK</div>
                   </div>
                 </div>
               </div>
-              <a href="#index" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="2s" id="thanks-button">Thanks!</a>             
-                
+
+              <div class="page-content">
+                <div>
+                  <img src="assets/light-bg.png"/ class="stretch page-background" alt="">
+                </div>
+                <div id="result-parent">
+                  <div id="finish-message" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <div id="congrats">Congratulations, you've made it!</div>
+                    <hr></hr>
+                  </div>
+                </div>
+  <!--          <p class="buttons-row">
+                    <a href="#" class="button button-raised button-fill color-red" id="feedback-hot">Too Hot</a>
+                    <a href="#" class="button button-raised button-fill color-green" id="feedback-good">Good</a>
+                    <a href="#" class="button button-raised button-fill color-blue" id="feedback-cold">Too Cold</a>
+                </p>     -->
+                <div id="feedback-wrapper" class="results-sub wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
+                  <div id="result" class="results-sub">Help me improve by telling me how I went.</div>
+                  <div id="feedback-temp">
+                    <input id="feedback-slider" type='range' min='1' max='7' value='4' step='1'/>
+                    <div id="temp">
+                      <div id="cold">cold</div>
+                      <div id="hot">hot</div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#index" class="button button-fill wow fadeIn" data-wow-duration="2s" data-wow-delay="2s" id="thanks-button">Thanks!</a>             
+                  
+              </div>
             </div>
+
+
+
+
           </div>
-
-
-
-
         </div>
       </div>
     </div>
